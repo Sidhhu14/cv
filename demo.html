@@ -1,0 +1,207 @@
+<!--<html>
+<head>
+<title>Expression Evaluation</title>
+<script type="text/javascript">
+function Compute()
+{
+form1.ans.value=eval(form1.my_exp.value);
+}
+</script>
+</head>
+<body>
+<form name="form1">
+      <b>Enter expression here </b><br />
+      <input type="text" name="my_exp"> <br/><br/>
+<input type="button" value="Evaluate"onclick=Compute()>
+<br/> <br/>
+     <b>Answer is:</b><br/>
+    <input type="text" name="ans">
+</form>
+</body>
+</html>
+
+GROCERY LIST PROGRAM:
+
+<html>
+<head><title>Grocery Shopping</title>
+<script type="text/javascript">
+function calculate()
+{
+	var name = document.getElementById("name").value;
+	var p1 = document.getElementById("p1").checked;
+	var p2 = document.getElementById("p2").checked;
+	var p3 = document.getElementById("p3").checked;
+	var p4 = document.getElementById("p4").checked;
+	var p5 = document.getElementById("p5").checked;
+	var total=0;
+	
+	
+	if(p1==true)
+	{
+	total=total+30;
+	}
+	if(p2==true)
+	{
+	total=total+5;
+	}
+	if(p3==true)
+	{
+	total=total+50;
+	}
+	if(p4==true)
+	{
+	total=total+40;
+	}
+	if(p5==true)
+	{
+	total=total+60;
+	}
+	
+
+		
+	alert("Welcome :" +" "+name);
+	alert("Total cost of Your Product is:" +total);
+	alert("Thank you for shopping with us");
+}
+</script>
+</head>
+<body>
+<h1 align="center"> Grocery Shopping</h1>
+<form name="f1" onsubmit="calculate()">
+<table align="center">
+	<tr>
+		<td>Name: </td>
+		<td><input type="text" name="name" id="name" /></td>
+	</tr>
+	<tr>
+		<td>Mail-Id:</td>
+		<td><input type="email" name="email" id="email" /></td>
+	</tr>
+	<tr>
+		<td>Phone_No:</td>
+		<td><input type="tel" name="phone" id="phone" /></td>
+	</tr>
+	<tr>
+		<td>Address:</td>
+		<td><textarea cols="30" rows="5" name="tf" id="tf"></textarea></td>
+	</tr>
+	<tr>	
+		<td>Purchage Date:</td>
+		<td><input type="date" name="date" id="date"/></td>
+	</tr>
+	<tr>
+		<td colspan="2">Items: </td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<ul>
+		<li>MILK=>Rs 30</li>
+		<li>EGG=>Rs 5</li>
+		<li>RICE=>Rs 50</li>
+		<li>JUICE=>Rs 40</li>
+		<li>OIL=>Rs 60</li>
+		</ul>
+
+	<tr>
+		<td colspan="2">Product to be Choose: </td>
+	</tr>
+	<tr>
+		<td>MILK</td>
+		<td><input type="radio" name="p1" id="p1" /></td>
+	</tr>
+	<tr>
+		<td>EGG</td>
+		<td><input type="radio" name="p2" id="p2" /></td>
+	</tr>
+	<tr>
+		<td>RICE</td>
+		<td><input type="radio" name="p3" id="p3" /></td>
+	</tr>
+	<tr>
+		<td>JUICE</td>
+		<td><input type="radio" name="p4" id="p4" /></td>
+	</tr>
+<tr>
+		<td>OIL</td>
+		<td><input type="radio" name="p5" id="p5"/></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><input type="submit" value="Submit"></td>
+	</tr>
+</table>
+
+</form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Purchase</title>
+<style>
+table, th, td {
+  border: 5px solid blue;
+}
+</style>
+</head>
+<body>
+    <h3 align="center">Advanced HTML tag Table using thead,tbody and tfoot</h3>
+<table border="1" align="center">
+<tr>
+  <td colspan="3" align="center">Purchase order:987654321</td>
+  <td>Tutorialbrain - 10th Oct 2020</td>
+</tr>
+<tr>
+  <td colspan="2"><b>Vendor:</b></br>
+                             ABC XYZ ltd.</br>
+                             DUMMY STREET</br>
+                             BUILDING 123</br>
+                             HAZARIBAGH,JHARKHAND,825301</td>
+   <td colspan="2"><b>SHIP TO:</b></br>
+                                 MS DHONI</br>
+                                 WILSON GARDEN</br>
+                                 SOUTHEAST BLOCK,RANCHI-834001</td>
+</tr>
+<tr>
+  <td><b>Qty.</b></td>
+  <td><b>Item Code</b></td>
+  <td><b>Description</b></td>
+  <td><b>Unit Price</b></td>
+</tr>
+<tr>
+  <td>100</td>
+  <td>IABCDE</td>
+  <td>Pencils</td>
+  <td>20.00</td>
+</tr>
+<tr>
+  <td>1000</td>
+  <td>IN877</td>
+  <td>Notebooks</td>
+  <td>100.00</td>
+</tr>
+<tr>
+  <td>500</td>
+  <td>IP8675</td>
+  <td>Pens</td>
+  <td>70.00</td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><b>Subtotal</b></td>
+  <td>190.0</td>
+</tr>
+<tr>
+  <td colspan="2" align="center"><b>GST</b></td>
+  <td>5%</td>
+  <td>9.50</td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><b>Grand Total</b></td>
+  <td>$ 199.50</td>
+</tr>
+</table>
+</body>
+</html>
+
